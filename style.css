@@ -17,6 +17,12 @@ body {
     top: 11%;
   }
 
+  /* Stylowanie guzika po kliknięciu - wszystkie style raczej do css próbujemy wepchnąć a JS zostawić dla samego działania i logiki skryptów */
+.main-btn:active{
+    background-color: #cdd3ff;
+}
+
+
 .title {
     text-align: center;
     font-family: 'Faster One', 'sans-serif';
@@ -52,4 +58,15 @@ body {
 .chart1 {
     margin-top: 200px;
 }
+
+.player-array {
+    margin-top: 200px;
+
+}
+
+#player-array div {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 8px;
+  }
   
