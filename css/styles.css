@@ -1,21 +1,48 @@
 body {
-    font-family: sans-serif;
-  }
-  
-  html,
-  .fullscreen {
-    display: flex;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  
-  .container {
-    margin: auto;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 3rem;
-  }
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html, .fullscreen {
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie w poziomie */
+  align-items: center; /* Wyśrodkowanie w pionie */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maksymalna szerokość kontenera */
+  margin: 0 auto; /* Wyśrodkowanie w poziomie */
+  padding: 20px; /* Padding w kontenerze */
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.authors {
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 100%;  /* Umożliwia karcie rozciąganie się na całą dostępną szerokość w kolumnie */
+  min-width: 300px; /* Zapewnia minimalną szerokość karty */
+  max-width: 500px; /* Ustawienie maksymalnej szerokości na 500px */
+  margin: 0 auto; /* Wyrównanie kart na środku kolumny */
+}
+
+
+
+.list-group-item {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}

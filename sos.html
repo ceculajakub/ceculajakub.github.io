@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="fullscreen d-flex flex-column justify-content-center align-items-center text-center" style="height: 100vh;">
+  <a href="index.html" class="btn btn-secondary mt-3 ms-3">← Powrót</a>
+  <h1 class="mb-4">Tryb SOS</h1>
+  <button onclick="vibrate()" class="btn btn-danger btn-lg">Wyślij sygnał SOS</button>
+
+  <script>
+    function vibrate() {
+      if ("vibrate" in navigator) {
+        const pattern = [200, 100, 200, 100, 200, 300, 600, 300, 600, 300, 200, 100, 200, 100, 200];
+        navigator.vibrate(pattern);
+        alert("Sygnał SOS został wysłany (wibracje).");
+      } else {
+        alert("Twoje urządzenie nie obsługuje wibracji.");
+      }
+    }
+  </script>
+</body>
+</html>

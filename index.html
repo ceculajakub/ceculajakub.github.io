@@ -7,29 +7,46 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/index.js"></script>
+
 </head>
-<body class="fullscreen">
-  <div class="authors">
-    <h1>Autorzy</h1>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Weronika Glazer</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">nr albumu 225 804</h6>
+<body>
+  <div class="container-custom">
+    <div class="text-center">
+      <h1 class="mb-4">Autorzy</h1>
+      
+
+
+      <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">Weronika Glazer</h6>
+              <h7 class="card-subtitle mb-2 text-body-secondary">nr albumu 225 804</h7>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Jakub Cecuła </h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">nr albumu 228 765</h6>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">Jakub Cecuła</h6>
+              <h7 class="card-subtitle mb-2 text-body-secondary">nr albumu 228 765</h7>
+            </div>
+          </div>
         </div>
+      </div>
+
+
+
+      <div class="list-group">
+        <a href="mapa.html" class="list-group-item list-group-item-action mb-3">Mapa</a>
+        <a href="sos.html" class="list-group-item list-group-item-action mb-3" onclick="vibrate()">SOS</a>
+      </div>
+
+      <footer class="mt-5">
+        <p class="text-muted">PWA - Aplikacja Webowa</p>
+      </footer>
     </div>
-  </div>
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-      Mapa
-    </a>
-    <a href="#" class="list-group-item list-group-item-action" onclick="vibrate()">SOS</a>
-    <p>deploy</p>
   </div>
 </body>
 </html>
