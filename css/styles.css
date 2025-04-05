@@ -9,15 +9,15 @@ body {
 html, .fullscreen {
   height: 100%;
   display: flex;
-  justify-content: center; /* Wyśrodkowanie w poziomie */
-  align-items: center; /* Wyśrodkowanie w pionie */
+  justify-content: center; 
+  align-items: center;
 }
 
 .container {
   width: 100%;
-  max-width: 1200px; /* Maksymalna szerokość kontenera */
-  margin: 0 auto; /* Wyśrodkowanie w poziomie */
-  padding: 20px; /* Padding w kontenerze */
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px; 
 }
 
 .title {
@@ -29,10 +29,10 @@ html, .fullscreen {
 }
 
 .card {
-  width: 100%;  /* Umożliwia karcie rozciąganie się na całą dostępną szerokość w kolumnie */
-  min-width: 300px; /* Zapewnia minimalną szerokość karty */
-  max-width: 500px; /* Ustawienie maksymalnej szerokości na 500px */
-  margin: 0 auto; /* Wyrównanie kart na środku kolumny */
+  width: 100%;  
+  min-width: 300px; 
+  max-width: 500px; 
+  margin: 0 auto; 
 }
 
 

@@ -40,7 +40,6 @@ function showMap() {
     (position) => {
       const { latitude, longitude } = position.coords;
 
-      // Jeśli kontener mapy już istnieje, usuń go i stwórz ponownie
       let oldMapDiv = document.getElementById("map");
       if (oldMapDiv) {
         oldMapDiv.remove();
@@ -51,7 +50,6 @@ function showMap() {
       mapContainer.style = "height: 400px; margin-top: 20px;";
       document.body.appendChild(mapContainer);
 
-      // Wczytaj tylko raz Leaflet JS i CSS
       if (!window.leafletLoaded) {
         const script = document.createElement("script");
         script.src = "https://unpkg.com/leaflet@1.9.3/dist/leaflet.js";
